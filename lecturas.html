@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="Curso 301122_20" name="author" />
+<meta content="Ovi de conexion a base de datos mysql con php" name="description" />
+<meta content="php, mysql, conexion, conexion php y mysql" name="keywords" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ovi Conexion php y mysql</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<!--<link href="css/normalize.css" rel="stylesheet" /> -->
+<link href="css/301122_20.css" rel="stylesheet" />
+
+<!--Agregamos libreria de Modernizr -->
+<script src="js/modernizr-custom.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12 altoCabecera1"></div>
+        </div>
+    	<div class="row fondoCabecera bordecabecera">
+        	<div class="col-md-4">
+            	<header><img src="images/Logo-UNAD.png" width="264" /></header>
+            </div>
+            <div class="col-md-8">
+                <nav class="navbar navbar-default bordecabecera">
+  						<div class="container-fluid">
+                        
+    						<!-- Brand and toggle get grouped for better mobile display -->
+    						<div class="navbar-header">
+      							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        							<span class="sr-only">Toggle navigation</span>
+        							<span class="icon-bar"></span>
+        							<span class="icon-bar"></span>
+        							<span class="icon-bar"></span>
+      							</button>
+      							<a class="navbar-brand" href="#">301122_20</a>
+    						</div>
+
+    						<!-- Collect the nav links, forms, and other content for toggling -->
+    						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      							<ul class="nav navbar-nav">
+        							<li class="active">
+                                	<a href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                                	</li>
+        							<li>
+                                	<a href="#">Lecturas</a>
+                                	</li>
+        							<li class="dropdown">
+          							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Multimedia<span class="caret"></span></a>
+          								<ul class="dropdown-menu">
+            								<li role="separator" class="divider"></li>
+                            <li><a href="multimedia1.html">Multimedia 1</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="multimedia2.html">Multimedia 2</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="multimedia3.html">Multimedia 3</a></li>
+                            <li role="separator" class="divider"></li>
+          								</ul>
+        							</li>
+      							</ul>
+                                <ul class="nav navbar-nav navbar-right">
+        							<li><a href="#">Actividades</a></li>
+                                	<li><a href="autores.html">Autores</a></li>
+      							</ul>
+    						</div><!-- /.navbar-collapse -->
+  						</div><!-- /.container-fluid -->
+					</nav>
+            </div>       
+        </div>
+    	
+       
+        
+    </div>
+    <div class="barraHeader">
+    <H4>PROGRAMACION WEB1 - VINCULACION DE BD A UNA PAGINA CON PHP</H4>
+    </div>
+    <div class="container cuerpo">
+    <div class="row">
+    <div class="col-md-2">
+    	<div class="eliminarDespues">
+        	<img src="images/Video.jpg" width="100%" height="100%"/>
+        </div>
+        <div  class="eliminarDespues">
+        	<img src="images/Tutoriales_y_mas.png" width="100%" height="100%"/>
+        </div>
+        <div  class="eliminarDespues">
+        	<!--<img src="images/contadorVisitas.png" width="100%" height="100%"/> -->
+            <script type="text/javascript" src="https://counter1.fcs.ovh/private/counter.js?c=rrbh3whuls25fh487mxyf5k18gujnkw4"></script>
+<br><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas gratis"><img src="https://counter1.fcs.ovh/private/contadorvisitasgratis.php?c=rrbh3whuls25fh487mxyf5k18gujnkw4" border="0" title="contador de visitas gratis" alt="contador de visitas gratis"></a></noscript>
+        </div>
+        <div  class="eliminarDespues">
+        	<img src="images/Twitter_bird_button.png" width="100%" height="100%"/>
+        </div>
+    </div>
+    <div class="col-md-10">
+     <div id="main">
+  
+   <h1>PROGRAMACION WEB I</h1>
+    
+<FONT COLOR="blue"> <H2>Conexion a Bases de Datos</H2>
+</FONT>  
+  
+<p align="left"<FONT SIZE="2">En este capitulo describiremos el proceso de instalacion de la base de datos MySQL, de un servidor web Apache con PHP, en una maquina con sistema operativo Windows.</FONT></p>
+
+<p align="left"<FONT SIZE="2"><p align="left"<FONT SIZE="2">Lo primero que debemos hacer es conseguirnos los programas necesarios, y que mejor para ello que dirigirnos a las páginas web, de los programas en cuestion:</FONT></p>.</FONT></p>
+<li><A HREF ="http://www.apache.org/">Apache: www.apache.org </A></li>  <P>apache_1_3_x_win32.exe</p>
+<li><A HREF ="http://www.mysql.com">Apache: www.mysql.com </A></li>   
+<P>mysql-shareware-3.22.34-win.zip</p>
+<li><A HREF ="http://www.php.net">Apache: www.php.net </A></li>   
+<php-3.0.x-win32.zip</p>
+
+  <u><H3>Conexion a Bases de datos con PHP y MySQL</H3>
+
+</u>
+<p>Lo interesante de un Sistema o Aplicación WEB es la de poder conectarse a una base de datos, y poder trabajar desde el lado del servidor con datos
+del negocio.Con PHP se puede acceder a diferentes motores de Bases de datos tales como SqlServer, Oracle, PostgreSql, sqlLite, interbase, MySQL entre
+otros. El más utilizado es MySQL. Para cada uno de ellos PHP implementa una serie de funciones que le permitan poder realizar las tareas propias de
+acceso a datos.</p>
+
+<li><A HREF ="https://www.google.com.co/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjn5b7D86HTAhVDRyYKHQTQBFUQFgg_MAE&url=https%3A%2F%2Fsenaintro.blackboard.com%2Fbbcswebdav%2Finstitution%2Fsemillas%2F228106_2_VIRTUAL-2015%2Fcontenido%2Foaaps%2Foaap7%2Faa5%2Foa_conexionabasesdedatosphp%2Fpdf%2Fpdf_conexionabasesdedatos.pdf&usg=AFQjCNFEy-4gK3N66ZDLodJBiEQB1zYBxw&bvm=bv.152180690,d.eWE">Conexion de bases de datos en PHP.pdf </A></li>
+<P>(Tutorial autoria del SENA)</P>
+
+
+<li><A HREF ="http://www.google.com.co/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&cad=rja&uact=8&ved=0ahUKEwi0w5iH_6HTAhWERyYKHQ4DALMQFghIMAQ&url=http%3A%2F%2Frealpv.hol.es%2FPHP%2520y%2520MySQL%2520mascotas.pdf&usg=AFQjCNFBQdUUgvGAoXYZ5-ShsITn57bV0A&bvm=bv.152180690,d.eWE"</A>Conexion de bases de datos en PHP.pdf</A></li>
+
+<U> <H3>Eliminar registros en bases de datos</H3></U>
+
+<p>Una tarea habitual con bases de datos será el tener que borrar cierta información. Vamos a ver cómo realizar el borrado de ciertos registros que cumplan una condición y el borrado completo de todos los registros (filas) de una tabla. Para ello utilizaremos dos expresiones para operaciones (consultas) sobre bases de datos que describiremos a continuación: delete y truncate.</p>
+
+<li><A HREF ="https://www.google.com.co/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjw1bzzi6LTAhWE6CYKHeGiB_gQFgggMAA&url=https%3A%2F%2Fwww.fdi.ucm.es%2Fprofesor%2Fjpavon%2Fweb%2F35-PHP-MySQL.pdf&usg=AFQjCNFCln1YjiGqMzDJnbB7iD6cNTt8kQ&bvm=bv.152180690,d.eWE"</A>Eliminar registros en PHP y MSQL.pdf</A></li>
+<P>(Tutorial autoria de Universidad Complutense Madrid)</P>
+
+
+<li><A HREF ="https://profewalder.files.wordpress.com/2013/04/gestic3b3n-de-bases-de-datos-en-mysql-desde-dreamweaver.pdf"</A>Eliminar registros en PHP y MSQL.pdf</A></li>
+
+<U> <H3>Tutorial Eliminar registros en bases de datos</H3></U>
+
+<div class ="video-responsibe">
+ 
+<iframe width="600" height="400" src="https://www.youtube.com/watch?v=Av7ieWUhuFY" frameborder="0" allowfullscreen></iframe>
+
+</div>
+ 
+
+<!--<script src="js/bootstrap.min.js"></script> -->
+
+</html>
